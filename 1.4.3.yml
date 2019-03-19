@@ -100,7 +100,7 @@ services:
   james:
     container_name: esn_james
     entrypoint: bash -c "java -Dlogback.configurationFile=/root/conf/logback.xml -Dworking.directory=/root/ -jar james-server.jar"
-    image: linagora/james-project:latest
+    image: linagora/james-project:1.4.1
     hostname: open-paas.org
     depends_on:
       - esn # to have configuration ready in shared volume
